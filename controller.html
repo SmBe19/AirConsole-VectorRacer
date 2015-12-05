@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="http://www.airconsole.com/api/airconsole-1.3.0.js"></script>
+  <script type="text/javascript" src="game_controller.js"></script>
+  <link rel="stylesheet" href="game_controller.css">
+</head>
+<body onload="init()">
+  <div id="player_id">Player Id</div>
+  <div id="plant_bomb" onclick="plantBomb()">Bomb</div>
+  <div id="analog" onmousedown="touchStart(event)" onmouseup="touchEnd(event, false)"
+  onmouseout="touchEnd(event, false)" onmousemove="touchEnd(event, true)">Analog Stick</div>
+  <div id="plant_freezer" onclick="plantFreezer()">Freezer</div>
+</body>
+</html>

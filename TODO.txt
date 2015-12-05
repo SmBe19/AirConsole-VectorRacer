@@ -1,0 +1,3 @@
+Implement Bombs / Freezers
+Collision Detection
+Checkpoints checking

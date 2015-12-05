@@ -1,0 +1,44 @@
+html, body{
+  font-family: sans-serif;
+  background: #000;
+  color: #EEE;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+#player_id{
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  position: absolute;
+}
+
+#plant_bomb{
+  text-align: center;
+  padding: 5px;
+  width: calc(30% - 10px);
+  height: calc(50% - 10px);
+  float: left;
+  background: #282;
+}
+
+#plant_freezer{
+  text-align: center;
+  padding: 5px;
+  width: calc(30% - 10px);
+  height: calc(50% - 10px);
+  float: left;
+  background: #228;
+}
+
+#analog{
+  text-align: center;
+  padding: 5px;
+  width: calc(70% - 10px);
+  height: calc(100% - 10px);
+  float: right;
+  background: #822;
+}
