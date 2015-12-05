@@ -7,9 +7,29 @@
 </head>
 <body onload="init()">
   <div id="player_id">Player Id</div>
-  <div id="plant_bomb" onclick="plantBomb()">Bomb</div>
-  <div id="analog" onmousedown="touchStart(event)" onmouseup="touchEnd(event, false)"
-  onmouseout="touchEnd(event, false)" onmousemove="touchEnd(event, true)">Analog Stick</div>
-  <div id="plant_freezer" onclick="plantFreezer()">Freezer</div>
+  <div id="plant_bomb" onmouseup="plantBomb(false)" ontouchend="plantBomb(true)">Bomb</div>
+  <div id="analog" onmousedown="touchStart(event, false)" onmouseup="touchEnd(false)"
+  onmouseout="touchEnd(false)" onmousemove="touchMove(event, false)"
+  ontouchstart="touchStart(event, true)" ontouchend="touchEnd(true)" ontouchmove="touchMove(event, true)">Analog Stick</div>
+  <div id="plant_freezer" onmouseup="plantFreezer(false)" ontouchend="plantFreezer(true)">Freezer</div>
+  <div id="wonmessage">
+    <h1 id="wonmessage_text">You won</h1>
+  </div>
+  <div id="welcome">
+    <div class="color_choose" id="color_red" onmouseup="chooseColor(this, false)" ontouchend="chooseColor(this, true)"></div>
+    <div class="color_choose" id="color_yellow" onmouseup="chooseColor(this, false)" ontouchend="chooseColor(this, true)"></div>
+    <div class="color_choose" id="color_dark_green" onmouseup="chooseColor(this, false)" ontouchend="chooseColor(this, true)"></div>
+    <div class="color_choose" id="color_violett" onmouseup="chooseColor(this, false)" ontouchend="chooseColor(this, true)"></div>
+    <div class="color_choose" id="color_orange" onmouseup="chooseColor(this, false)" ontouchend="chooseColor(this, true)"></div>
+    <div class="color_choose" id="color_green" onmouseup="chooseColor(this, false)" ontouchend="chooseColor(this, true)"></div>
+    <div class="color_choose" id="color_pink" onmouseup="chooseColor(this, false)" ontouchend="chooseColor(this, true)"></div>
+    <div class="color_choose" id="color_light_blue" onmouseup="chooseColor(this, false)" ontouchend="chooseColor(this, true)"></div>
+    <div class="color_choose" id="color_blue" onmouseup="chooseColor(this, false)" ontouchend="chooseColor(this, true)"></div>
+    <h1 id="welcome_text">Please choose a color!</h1>
+  </div>
+  <div id="mapchoose">
+    <h1 id="mapchoose_text">Please choose a map</h1>
+    <div id="mapchoose_list"></div>
+  </div>
 </body>
 </html>
