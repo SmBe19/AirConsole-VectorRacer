@@ -1,3 +1,2 @@
-Fix Rank showing after reloading maps
 Improve visuals
 Add explanation

@@ -44,6 +44,7 @@ function initConsole(){
           fillMapList(data.maps);
         } else if(data.action == "mapLoaded"){
           mapchooseEl.hidden = true;
+          wonEl.hidden = true;
         }
       }
     }
